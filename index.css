@@ -1,0 +1,95 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: #d5e1ef;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.text {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  letter-spacing: 1.5;
+}
+
+.text p {
+  padding: 1rem;
+  color: #848892;
+}
+
+.attribution {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 330px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
